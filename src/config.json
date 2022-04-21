@@ -1,0 +1,10 @@
+{
+    "bot_prefix": "sx!",
+    "log_channel_id": "963713518966808587",
+    "owner_main_id": "882595027132493864",
+    "owner_alt_id": "916880217329516604",
+    "status_text": "sx!help | sx9.is-a.dev",
+    "status_type": "LISTENING",
+    "embed_color": "#00e1ff",
+    "server_port": 3000
+}
