@@ -10,5 +10,7 @@ client.commands = new Discord.Collection();
 require("./utils/handlers").setEvents(client);
 // Command Handler
 require("./utils/handlers").setCommands(client);
+// Start Pinger
+require("./utils/pinger").startPinger();
 
 client.login(require("./secrets.json").bot_token);
