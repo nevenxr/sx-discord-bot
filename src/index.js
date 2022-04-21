@@ -4,6 +4,8 @@ const client = new Discord.Client({
     intents: ["GUILDS", "GUILD_MESSAGES"]
 });
 
+client.commands = new Discord.Collection();
+
 // Event Handler
 require("./utils/handlers").setEvents(client);
 // Command Handler
