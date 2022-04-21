@@ -2,7 +2,7 @@ const {
     status_text,
     status_type,
     log_channel_id
-} = require("../config.json");
+} = require("../../config.json");
 
 module.exports = {
     name: "ready",

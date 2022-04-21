@@ -1,4 +1,4 @@
-const { log_channel_id } = require("../config.json");
+const { log_channel_id } = require("../../config.json");
 
 module.exports = {
     name: "guildCreate",
