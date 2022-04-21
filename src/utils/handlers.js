@@ -14,5 +14,13 @@ module.exports.setEvents = (client) => {
 };
 
 module.exports.setCommands = (client) => {
+    let files = sync("./src/commands/**/*.js");
     
+    for (let i = 0; i < files.length; i++) {
+        let command = require(resolve(files[i]));
+        
+        if (typeof command === "object" && command.name) {
+            client.commands.set(command.name, command);
+        };
+    };
 };
